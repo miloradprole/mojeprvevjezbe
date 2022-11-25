@@ -1,0 +1,2 @@
+# mojeprvevjezbe
+ucenje
