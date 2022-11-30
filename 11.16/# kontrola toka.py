@@ -122,7 +122,7 @@ cena = 3000
 # print(poruka)
 
 popularan_proizvod = ""
-jesen = True
+jesen = False
 
 popularan_proizvod = "ajvar" if jesen else "sladoled"
 print(popularan_proizvod)
