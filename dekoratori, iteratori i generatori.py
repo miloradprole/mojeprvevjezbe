@@ -98,13 +98,52 @@
 # print(next(cities_iterator))
 # print(next(cities_iterator))
 
-brojevi = [2, 6, 7, 33, 895, 74]
-iterabilni_brojevi = iter(brojevi)
-print(next(iterabilni_brojevi))
-print(next(iterabilni_brojevi))
-print(next(iterabilni_brojevi))
-print(next(iterabilni_brojevi))
-print(next(iterabilni_brojevi))
-print(next(iterabilni_brojevi))
-print(next(iterabilni_brojevi))
+# brojevi = [2, 6, 7, 33, 895, 74]
+# iterabilni_brojevi = iter(brojevi)
+# print(next(iterabilni_brojevi))
+# print(next(iterabilni_brojevi))
+# print(next(iterabilni_brojevi))
+# print(next(iterabilni_brojevi))
+# print(next(iterabilni_brojevi))
+# print(next(iterabilni_brojevi))
+# print(next(iterabilni_brojevi))
 
+
+#iter i next kod while petlje:
+
+# cities = ["new york", "london", "moscow"] 
+# cities_iterator = iter(cities) 
+  
+# while cities_iterator: 
+#     try: 
+#         print(next(cities_iterator)) 
+  
+#     except StopIteration: 
+#         break
+
+# GENERATORI:
+
+# def even_numbers(a):
+#     for x in range(a):
+#         if x % 2==0:
+#             yield x
+# for e in even_numbers(10):
+#     print(e,end=', ')
+
+# def func():
+#     i = 10
+#     while i > 0:
+#         yield i
+#         i -= 1
+# for i in func(): print(i, end=' ')
+
+
+# Napisati generatorsku funkciju koja ispisuje sve elemente deljive sa 3 od 1 do 50.
+
+def div(a):
+    for x in range(a):
+        if x % 3==0:
+            yield x
+
+for e in div(50):
+    print(e,end=', ')
